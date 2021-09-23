@@ -28,6 +28,7 @@ spec:
       script: |
         #!/usr/bin/env bash
         git clone https://sandeep782:$(params.token)@github.com/sandeep782/deploy-app-using-tekton-on-k8s.git
+        ls
         pwd
         
         
