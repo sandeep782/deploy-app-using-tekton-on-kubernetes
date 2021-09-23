@@ -23,7 +23,7 @@ spec:
 #       - name: imageTag
 #         description: Tag to apply to the built image
 #         value: latest
-  steps:
+   steps:
       - name: hello
         image: golang # contains python
         env:
