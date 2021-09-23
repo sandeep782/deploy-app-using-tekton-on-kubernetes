@@ -18,15 +18,16 @@ spec:
       env:
         - name: token
           value: $(params.token)
-      command:
-      - git
+#       command:
+#       - git
         
-      args:
-      - clone
-      - https://sandeep782:$(params.token)@github.com/sandeep782/deploy-app-using-tekton-on-k8s.gi
+#       args:
+#       - clone
+#       - https://sandeep782:$(params.token)@github.com/sandeep782/deploy-app-using-tekton-on-k8s.git
           
       script: |
         #!/usr/bin/env bash
+        git clone https://sandeep782:$(params.token)@github.com/sandeep782/deploy-app-using-tekton-on-k8s.git
         pwd
         
         
