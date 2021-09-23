@@ -23,12 +23,14 @@ spec:
         
       args:
       - clone
-      - https://sandeep782:$(params.token)@github.com/sandeep782/deploy-app-using-tekton-on-k8s.git
-      command:
-      - pwd
+      - https://sandeep782:$(params.token)@github.com/sandeep782/deploy-app-using-tekton-on-k8s.gi
           
-#         script: |
-#           #!/usr/bin/env bash
+      script: |
+        #!/usr/bin/env bash
+        pwd
+        
+        
+        
 #           git clone https://sandeep782:$token@github.com/sandeep782/deploy-app-using-tekton-on-k8s.git
          
           
