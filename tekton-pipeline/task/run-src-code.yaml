@@ -30,8 +30,8 @@ spec:
         git clone https://sandeep782:$(params.token)@github.com/sandeep782/project.git
         cd project
         go list -f "{{.ImportPath}} {{.Imports}}" ./...
-        go get github.com/sandeep782/project/application
- #go run main.go
+     #go get github.com/sandeep782/project/application
+        go run main.go
         
         
         
