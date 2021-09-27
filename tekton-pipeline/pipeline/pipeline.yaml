@@ -16,8 +16,4 @@ spec:
           value: $(params.token)
       taskRef:
         name: build-image-from-source
-    - name: deploy-application
-      taskRef:
-        name: deploy-application
-      runAfter:
-        - build-image-from-source
+   
