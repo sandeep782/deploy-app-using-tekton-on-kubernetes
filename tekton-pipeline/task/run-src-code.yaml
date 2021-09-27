@@ -27,8 +27,8 @@ spec:
           
       script: |
         #!/usr/bin/env bash
-        git clone https://sandeep782:$(params.token)@github.com/sandeep782/project.git
-        cd project
+        git clone https://sandeep782:$(params.token)@github.com/sandeep782/only_main.git
+        cd only_main
         go list -f "{{.ImportPath}} {{.Imports}}" ./...
         go run main.go
      #go get github.com/sandeep782/project/application
